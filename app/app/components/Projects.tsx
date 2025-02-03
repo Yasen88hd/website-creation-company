@@ -68,7 +68,12 @@ export default async function Projects() {
             );
 
             return project.url ? (
-              <Link href={project.url} key={index} className="group">
+              <Link
+                href={project.url}
+                target="_blank"
+                key={index}
+                className="group"
+              >
                 {content}
               </Link>
             ) : (
